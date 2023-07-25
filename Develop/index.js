@@ -1,7 +1,8 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
+const readmeGuide = require('./assets/readme-guide')
 const fs = require('fs');
-// TODO: Create an array of questions for user input
+// Create an array of questions for user input
 const questions = [
   {
     type: 'input',
@@ -109,14 +110,14 @@ const questions = [
   },
   {
     type: "input",
-    message: "Please provide the guidelines for contributing!",
+    message: "Please provide the guidelines for contributing",
     name: "contributing",
     validate: (contributing) => {
       if (contributing) {
         return true;
       }
       else {
-        console.log('Please enter guidelines for contributing!');
+        console.log('Please enter valid guidelines for contributing');
         return false;
       }
     }
@@ -137,10 +138,10 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 const writeFile = fileContent => {
   return new Promise((resolve, reject) => {
-      fs.writeFile('README.md', fileContent, err => {
+      fs.writeFile('READMEoutput.md', fileContent, err => {
           if (err) {
               reject(err);
               return;
@@ -148,13 +149,13 @@ const writeFile = fileContent => {
 
           resolve({
               ok: true,
-              message: 'Successfully generate to README.md!'
+              message: 'Successfully generated a README!'
           });
       });
   });
 };
 
-// TODO: Create a function to initialize app
+// Create a function to initialize app
 function init() {
   return inquirer.prompt(questions)
     .then(readmeData => {
@@ -163,4 +164,17 @@ function init() {
 }
 
 // Function call to initialize app
-init();
+init().then(readmeData => {
+  console.log(readmeData);
+  return readmeGuide.generateReadme(readmeData);
+})
+.then(pageMD => {
+  return writeFile(pageMD);
+})
+.then(writeFileResponse => {
+    console.log(writeFileResponse.message);
+})
+.catch(err => {
+    console.log(err);
+});
+
