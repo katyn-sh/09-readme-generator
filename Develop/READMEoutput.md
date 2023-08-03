@@ -1,7 +1,7 @@
-# ReadMe Generator
+# 11-note-taker
       
 ## [Description](#table-of-contents)
-Generator for professional ReadMe.md for GitHub repositories
+A note taking application deployed to Heroku. Allows users to create, save and delete notes, using an Express backend and data storage with JSON.
 
 <img src="https://img.shields.io/badge/license-MIT-yellow"/>
 
@@ -15,10 +15,10 @@ Generator for professional ReadMe.md for GitHub repositories
 * [FAQs](#faqs)
    
 ## [Installation](#table-of-contents)
-run node index.js in terminal
+Clone or download the project locally. Navigate to the un-zipped project and run "npm i" to install the required packages.
    
 ## [Usage](#table-of-contents)
-follow the prompts in the terminal to fill out the readme template
+Upon launching the application, users will be able to add and remove notes as they so choose. Each note will populate the left column. 
        
 ## [license](#table-of-contents)
 <img src="https://img.shields.io/badge/license-MIT-yellow"/>
@@ -32,12 +32,12 @@ If you want to:
 * Improve documentation
 * Contribute to the code
 
-Look over the code and contact me for any errors
+Feel free to contact me, or fork and request for pull
    
-GitHub [issues page](https://github.com/katyn-sh/09-readme-generator/issues) 
+GitHub [issues page](https://github.com/katyn-sh/11-note-taker/issues) 
    
 ## [Tests](#table-of-contents)
-Open in VS code and run node index.js
+n/a
    
 ## [FAQs](#table-of-contents)
 Contact Information:
