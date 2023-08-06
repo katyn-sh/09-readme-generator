@@ -1,7 +1,7 @@
-# 11-note-taker
+# 12-employee-tracker
       
 ## [Description](#table-of-contents)
-A note taking application deployed to Heroku. Allows users to create, save and delete notes, using an Express backend and data storage with JSON.
+Users can view departments/employees and add/update employees, departments and roles
 
 <img src="https://img.shields.io/badge/license-MIT-yellow"/>
 
@@ -15,10 +15,10 @@ A note taking application deployed to Heroku. Allows users to create, save and d
 * [FAQs](#faqs)
    
 ## [Installation](#table-of-contents)
-Clone or download the project locally. Navigate to the un-zipped project and run "npm i" to install the required packages.
+run "npm i"
    
 ## [Usage](#table-of-contents)
-Upon launching the application, users will be able to add and remove notes as they so choose. Each note will populate the left column. 
+to run the application, "node index.js"
        
 ## [license](#table-of-contents)
 <img src="https://img.shields.io/badge/license-MIT-yellow"/>
@@ -32,12 +32,12 @@ If you want to:
 * Improve documentation
 * Contribute to the code
 
-Feel free to contact me, or fork and request for pull
+please reach out to contact me, or pull request
    
-GitHub [issues page](https://github.com/katyn-sh/11-note-taker/issues) 
+GitHub [issues page](https://github.com/katyn-sh/12-employee-tracker/issues) 
    
 ## [Tests](#table-of-contents)
-n/a
+No testing is currently set up
    
 ## [FAQs](#table-of-contents)
 Contact Information:
