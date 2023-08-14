@@ -1,7 +1,7 @@
-# 12-employee-tracker
+# 14-mvc-tech-blog
       
 ## [Description](#table-of-contents)
-Users can view departments/employees and add/update employees, departments and roles
+An MVC type blog using handlebars for templating, sequelize for ORM and express-session for authentification
 
 <img src="https://img.shields.io/badge/license-MIT-yellow"/>
 
@@ -15,10 +15,10 @@ Users can view departments/employees and add/update employees, departments and r
 * [FAQs](#faqs)
    
 ## [Installation](#table-of-contents)
-run "npm i"
+npm i
    
 ## [Usage](#table-of-contents)
-to run the application, "node index.js"
+mysql
        
 ## [license](#table-of-contents)
 <img src="https://img.shields.io/badge/license-MIT-yellow"/>
@@ -32,12 +32,12 @@ If you want to:
 * Improve documentation
 * Contribute to the code
 
-please reach out to contact me, or pull request
+Pull whenever
    
-GitHub [issues page](https://github.com/katyn-sh/12-employee-tracker/issues) 
+GitHub [issues page](https://github.com/katyn-sh/14-mvc-tech-blog/issues) 
    
 ## [Tests](#table-of-contents)
-No testing is currently set up
+No current testing
    
 ## [FAQs](#table-of-contents)
 Contact Information:
